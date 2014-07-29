@@ -41,7 +41,7 @@ class Asari
   # CloudSearch API).
   #
   def api_version
-    v = @api_version || "2011-02-01"
+    v = @api_version || "2013-01-01"
     p "Version is>>>>>>>>> #{v}"
     v
   end

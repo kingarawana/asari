@@ -64,7 +64,6 @@ class Asari
       def asari_index(search_domain, fields, options = {})
         aws_region = options.delete(:aws_region)
         api_version = options.delete(:api_version)
-        p "version was::::::::: #{api_version}"
         self.class_variable_set(:@@asari_instance, Asari.new(search_domain,aws_region,api_version))
         self.class_variable_set(:@@asari_fields, fields)
         self.class_variable_set(:@@asari_when, options.delete(:when))

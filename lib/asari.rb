@@ -41,7 +41,9 @@ class Asari
   # CloudSearch API).
   #
   def api_version
-    @api_version || "2011-02-01"
+    v = @api_version || "2011-02-01"
+    p "Version is>>>>>>>>> #{v}"
+    v
   end
 
   # Public: returns the current aws_region, or the sensible default of
